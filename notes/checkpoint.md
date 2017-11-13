@@ -6,3 +6,4 @@
 6. Availability policies(Live migrate, Auto restart)
 7. GSuite Admin
 8. Service Accounts
+9. Cloud Storage(like the Amazon S3) support to Object Change Notification(like the Webhook)

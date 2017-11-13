@@ -90,8 +90,6 @@ resource "google_compute_instance" "vm3" {
   }
 }
 
-
-
 resource "google_compute_instance" "vm4" {
   name         = "learn-windows-4"
   machine_type = "custom-2-2048" # "custom-CPUS-MEMORY"

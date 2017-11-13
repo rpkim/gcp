@@ -16,7 +16,7 @@ resource "google_compute_firewall" "ingress1" {
   source_ranges = ["0.0.0.0/0"]
 }
 
-resource "google_compute_firewall" "egress2" {
+resource "google_compute_firewall" "egress1" {
   name    = "allow-ssh-icmp-rdp-learncustom"
   network = "${google_compute_network.vpc2.name}"
   direction = "EGRESS"

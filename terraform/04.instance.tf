@@ -1,5 +1,5 @@
-resource "google_compute_instance" "vm4" {
-  name         = "learn-4"
+resource "google_compute_instance" "vm1" {
+  name         = "learn-1"
   machine_type = "f1-micro" # "n1-standard-1"
   zone         = "us-east1-b"
 
@@ -90,6 +90,28 @@ resource "google_compute_instance" "vm3" {
   }
 }
 
-output "all" {
-    value = "${google_compute_instance.vm4.internal_ip}"
+
+
+resource "google_compute_instance" "vm4" {
+  name         = "learn-windows-4"
+  machine_type = "custom-2-2048" # "custom-CPUS-MEMORY"
+  zone         = "us-east1-b"
+
+  tags = ["foo", "bar"]
+
+  boot_disk {
+    initialize_params {
+      image = "windows-cloud/windows-1709-core"
+    }
+  }
+
+  network_interface {
+    //network = "default"
+    //network      = "${google_compute_network.custom-subnet.id}"
+    subnetwork   = "${google_compute_subnetwork.subnet1b.name}"
+
+    access_config {
+      // Ephemeral IP
+    }
+  }
 }

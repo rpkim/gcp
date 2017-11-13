@@ -55,3 +55,50 @@ resource "google_compute_subnetwork" "subnet1a" {
   region = "us-east1"
 }
 ~~~~
+
+## Create a vm
+boot_disk list : https://cloud.google.com/compute/docs/images
+machine_type : https://cloud.google.com/compute/docs/reference/latest/instances#machineType
+~~~~
+resource "google_compute_instance" "vm1" {
+  name         = "learn-1"
+  machine_type = "f1-micro" # "n1-standard-1",custom : "custom-CPUs-MEMORY", example :  "custom-2-2048" 
+  zone         = "us-east1-b"
+
+  tags = ["foo", "bar"]
+
+  boot_disk {
+    initialize_params {
+      image = "debian-cloud/debian-9"
+    }
+  }
+
+  // Local SSD disk
+  /*
+  scratch_disk {
+  }
+  */
+
+  network_interface {
+    network = "default"
+    //network      = "${google_compute_network.custom-subnet.id}"
+    //subnetwork   = "${google_compute_subnetwork.subnet1a.id}"
+
+    access_config {
+      // Ephemeral IP
+    }
+  }
+
+
+  metadata {
+    foo = "bar"
+  }
+
+  metadata_startup_script = "sudo apt-get install traceroute"
+/*
+  service_account {
+    scopes = ["userinfo-email", "compute-ro", "storage-ro"]
+  }
+  */
+}
+~~~~

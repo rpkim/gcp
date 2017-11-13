@@ -38,7 +38,8 @@ Searchbar ( Item / Menu)
 
 ### Network
 - Has no IP address range
-- Is global and spans all available regions
+- Is global and spans all available regions *
+  => It means, gcp can create subnet in other region
 - Contains subnetworks
 - Types of Networks
  - Default, auto, custom

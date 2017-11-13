@@ -34,3 +34,19 @@ Searchbar ( Item / Menu)
 - https://cloudharmony.com/speedtest-for-google
 
 ### How to delete networks and subnetworks
+
+
+# Service Accounts
+- Provide an identity for carrying out `server-to-server` interactions in a porject without supplying user credentials
+- Used to `authenticate` from one service to another
+
+## Identified by an email address
+- 123465643-compute@project.gserviceaccount.com
+
+## Three types of service accounts
+- User-created(custom)
+- Built-in
+- Google APIs service account
+
+# IAM
+![IAM](https://cloud.google.com/iam/docs/overview?hl=en_US&_ga=2.256658379.-1724541431.1510060618&_gac=1.24065736.1510535694.Cj0KCQiA_5_QBRC9ARIsADVww17gFPXTmV3WyNECTLg7OAjV8figlmDUY_Ss8vI0GVcL03AdblCHGhUaAoZtEALw_wcB)

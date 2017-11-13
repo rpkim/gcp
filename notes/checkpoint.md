@@ -5,3 +5,4 @@
 5. Beta has no SLA(Service Level Agreement)
 6. Availability policies(Live migrate, Auto restart)
 7. GSuite Admin
+8. Service Accounts

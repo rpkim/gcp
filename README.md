@@ -17,6 +17,21 @@ provider "google" {
 ~~~~
 - credentials is provided from `APIs & services` -> `Credentials` -> `Service account keys`
 - download a json file.
+example.json
+~~~~
+{
+  "type": "service_account",
+  "project_id": "qwiklabs-gcp-4af5ff53d5c03267",
+  "private_key_id": "-",
+  "private_key": "-",
+  "client_email": "qwiklabs-gcp-4af5ff53d5c03267@qwiklabs-gcp-4af5ff53d5c03267.iam.gserviceaccount.com",
+  "client_id": "112069848741845590226",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "-"
+}
+~~~~
 
 ## Create a VPC
 ~~~~

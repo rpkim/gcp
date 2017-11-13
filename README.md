@@ -16,7 +16,10 @@ provider "google" {
 }
 ~~~~
 - credentials is provided from `APIs & services` -> `Credentials` -> `Service account keys`
+![](img/api.png)
 - download a json file.
+![](img/api_2.png)
+
 example.json
 ~~~~
 {

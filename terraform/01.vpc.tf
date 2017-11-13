@@ -8,7 +8,7 @@ resource "google_compute_network" "vpc1" {
 /* custom create subnet */
 resource "google_compute_network" "vpc2" {
   name                    = "vpc2"
-  description             = "Learn about auto-type networks"
+  description             = "Learn about manual-type networks"
   auto_create_subnetworks = "false"
 }
 

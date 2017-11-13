@@ -21,7 +21,7 @@ provider "google" {
 ![](img/api_2.png)
 
 example.json
-~~~~
+```json
 {
   "type": "service_account",
   "project_id": "qwiklabs-gcp-4af5ff53d5c03267",
@@ -34,32 +34,32 @@ example.json
   "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
   "client_x509_cert_url": "-"
 }
-~~~~
+```
 
 ## Create a VPC
-~~~~
+```terraform
 resource "google_compute_network" "default" {
   name                    = "learnauto"
   description             = "Learn about auto-type networks"
   auto_create_subnetworks = "true"
 }
-~~~~
+```
 - if you want to config custom subnet, the value of `auto_create_subnetworks=true`
 
 ## Create a subnet
-~~~~
+```terraform
 resource "google_compute_subnetwork" "subnet1a" {
   name   = "subnet-1a"
   ip_cidr_range = "192.168.5.0/24"
   network = "${google_compute_network.default.self_link}"
   region = "us-east1"
 }
-~~~~
+```
 
 ## Create a vm
 boot_disk list : https://cloud.google.com/compute/docs/images
 machine_type : https://cloud.google.com/compute/docs/reference/latest/instances#machineType
-~~~~
+```terraform
 resource "google_compute_instance" "vm1" {
   name         = "learn-1"
   machine_type = "f1-micro" # "n1-standard-1",custom : "custom-CPUs-MEMORY", example :  "custom-2-2048" 
@@ -101,7 +101,7 @@ resource "google_compute_instance" "vm1" {
   }
   */
 }
-~~~~
+```
 
 you can check the status of VM
 ~~~~

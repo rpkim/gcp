@@ -29,3 +29,17 @@ Searchbar ( Item / Menu)
 - RESTful API ( get, post, put, delete <-, -> JSON )
 - CLI Tools ( gcloud, gsutil)
 - Java, Python, NodeJS, Ruby, Go, PHP (support to langugages)
+
+# Cloud Virtual Network(CVN) Objects
+## Projects and networks
+### Project
+- Associates objefcts and services with billing
+- Contains networks (quota max 5)
+
+### Network
+- Has no IP address range
+- Is global and spans all available regions
+- Contains subnetworks
+- Types of Networks
+ - Default, auto, custom
+ - auto can be converted to custom but once custom, always custom

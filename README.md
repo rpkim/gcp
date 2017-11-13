@@ -120,3 +120,5 @@ To see details about the CPUs installed in your VM, enter the following command:
 Exit the terminal
 `exit`
 ~~~~
+examples:
+![](img/status.png)

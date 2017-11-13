@@ -44,3 +44,6 @@ Searchbar ( Item / Menu)
 - Types of Networks
  - Default, auto, custom
  - auto can be converted to custom but once custom, always custom
+ 
+ ## Subnetworks cross zones
+ 

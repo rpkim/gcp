@@ -29,3 +29,8 @@ Searchbar ( Item / Menu)
 - RESTful API ( get, post, put, delete <-, -> JSON )
 - CLI Tools ( gcloud, gsutil)
 - Java, Python, NodeJS, Ruby, Go, PHP (support to langugages)
+
+## Network Latency
+- https://cloudharmony.com/speedtest-for-google
+
+### How to delete networks and subnetworks

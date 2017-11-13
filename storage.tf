@@ -8,4 +8,5 @@ resource "google_storage_bucket" "image-store" {
     not_found_page   = "404.html"
   }
 }
+
 */

@@ -15,7 +15,7 @@ provider "google" {
   region      = "ap-northeast-1"
 }
 ~~~~
-- credentials is provided from \APIs & services\ -> \Credentials\ -> \Service account keys\
+- credentials is provided from `APIs & services` -> `Credentials` -> `Service account keys`
 - download a json file.
 
 ## Create a VPC
@@ -26,7 +26,7 @@ resource "google_compute_network" "default" {
   auto_create_subnetworks = "true"
 }
 ~~~~
-- if you want to config custom subnet, the value of \auto_create_subnetworks=true\
+- if you want to config custom subnet, the value of `auto_create_subnetworks=true`
 
 ## Create a subnet
 ~~~~

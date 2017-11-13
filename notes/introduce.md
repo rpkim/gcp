@@ -21,8 +21,8 @@ Searchbar ( Item / Menu)
 - Cloud SDK(api toolset)
 
 ## gcloud
-\gcloud compute list\
-\gcloud config list\
+`gcloud compute list`
+`gcloud config list`
 
 ## API Interfaces
 - OAuth2 is used for all authentication

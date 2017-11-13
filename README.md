@@ -102,3 +102,21 @@ resource "google_compute_instance" "vm1" {
   */
 }
 ~~~~
+
+you can check the status of VM
+~~~~
+Enter the following command: 
+`free`
+
+To see details about the RAM installed in your VM, enter the following command:
+`sudo dmidecode -t 17`
+
+Enter the following command to verify the number of processors:
+`nproc`
+
+To see details about the CPUs installed in your VM, enter the following command:
+`lscpu`
+
+Exit the terminal
+`exit`
+~~~~

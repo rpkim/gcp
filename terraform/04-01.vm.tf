@@ -41,6 +41,7 @@ resource "google_compute_instance" "vm1" {
 }
 
 resource "google_compute_instance" "vm2" {
+  metadata_startup_script = "${file("startup.sh")}"
   name         = "learn-2"
   machine_type = "f1-micro" # "n1-standard-1"
   zone         = "us-east1-b"

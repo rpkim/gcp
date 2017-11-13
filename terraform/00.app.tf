@@ -1,7 +1,7 @@
 // Configure the Google Cloud provider
 provider "google" {
   credentials = "${file("account.json")}"
-  project     = "qwiklabs-gcp-b668ab06d1b33269"
+  project     = "qwiklabs-gcp-27107b877400e40b"
   region      = "ap-northeast-1"
 }
 

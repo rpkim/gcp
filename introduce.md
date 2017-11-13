@@ -24,3 +24,8 @@ Searchbar ( Item / Menu)
 \gcloud compute list\
 \gcloud config list\
 
+## API Interfaces
+- OAuth2 is used for all authentication
+- RESTful API ( get, post, put, delete <-, -> JSON )
+- CLI Tools ( gcloud, gsutil)
+- Java, Python, NodeJS, Ruby, Go, PHP (support to langugages)

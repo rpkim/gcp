@@ -1,5 +1,7 @@
 # gcp
 google cloud platform with terraform
+refactoring script move to private repository
+(https://bitbucket.org/rpkim/gcp)
 
 ## terrafrom download
 https://www.terraform.io/downloads.html

@@ -45,7 +45,7 @@ resource "google_compute_network" "default" {
   auto_create_subnetworks = "true"
 }
 ```
-- if you want to config custom subnet, the value of `auto_create_subnetworks=true`
+- if you want to config custom subnet, the value of `auto_create_subnetworks=false`
 
 ## Create a subnet
 ```terraform
